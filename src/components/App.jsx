@@ -3,6 +3,7 @@ import { Form } from './Form/Form';
 import { Wrapper, Title } from './App.styled';
 import { Filter } from './Filter/Filter';
 import { ContactList } from './Contacts/ContactList';
+
 export const App = () => {
   const [contacts, setContacts] = useState(
     JSON.parse(window.localStorage.getItem(`contacts`)) ?? []
